@@ -2,8 +2,8 @@ Summary:	Generic Apache Request Library
 Summary(pl):	Standardowa biblioteka zapytañ Apache
 Summary(pt_BR):	Biblioteca de requisiçoes do Apache
 Name:		libapreq
-Version:	1.0
-Release:	3
+Version:	1.1
+Release:	1
 License:	Apache Group
 Group:		Libraries
 Source0:	http://www.apache.org/dist/httpd/%{name}/%{name}-%{version}.tar.gz
