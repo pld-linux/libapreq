@@ -13,7 +13,7 @@ BuildRequires:	apache1-mod_perl >= 1.26-5
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	libtool
-BuildRequires:	/usr/bin/pod2man
+BuildRequires:	perl-tools-pod
 Requires:	apache1-mod_perl >= 1.26
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
