@@ -7,6 +7,7 @@ Release:	1
 License:	Apache Group
 Group:		Libraries
 Source0:	http://www.apache.org/dist/httpd/%{name}/%{name}-%{version}.tar.gz
+# Source0-md5:	99471b32f72c43dfd5d2e3078d44c1fc
 URL:		http://httpd.apache.org/apreq/
 BuildRequires:	apache-mod_perl >= 1.26-5
 BuildRequires:	autoconf
