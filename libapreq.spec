@@ -1,13 +1,12 @@
-%define pnam	libapreq
 Summary:	Generic Apache Request Library
 Summary(pl):	Standardowa biblioteka zapytañ Apache
 Summary(pt_BR):	Biblioteca de requisiçoes do Apache
-Name:		%{pnam}
+Name:		libapreq
 Version:	1.0
 Release:	2
 License:	Apache Group
 Group:		Libraries
-Source0:	http://www.apache.org/dist/httpd/%{pdir}/%{pnam}-%{version}.tar.gz
+Source0:	http://www.apache.org/dist/httpd/%{name}/%{name}-%{version}.tar.gz
 URL:		http://httpd.apache.org/apreq/
 BuildRequires:	apache-mod_perl >= 1.26-5
 BuildRequires:	autoconf
@@ -56,7 +55,7 @@ Static version of libapreq library.
 Statyczna wersja biblioteki libapreq.
 
 %prep
-%setup -q -n %{pnam}-%{version}
+%setup -q -n %{name}-%{version}
 
 %build
 %{__libtoolize}
