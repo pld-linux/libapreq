@@ -39,7 +39,7 @@ cliente através da API do Apache em C.
 	--enable-static=no  \
 	--with-apache-includes=%{_includedir}/apache
 %{__make} OPTIMIZE="%{rpmcflags}"
-/usr/bin/pod2man libapreq.pod | gzip -9 > libapreq.3pm
+/usr/bin/pod2man libapreq.pod > libapreq.3pm
 
 %install
 rm -rf $RPM_BUILD_ROOT
