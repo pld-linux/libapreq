@@ -3,7 +3,7 @@ Summary(pl):	Standardowa biblioteka zapytañ Apache
 Summary(pt_BR):	Biblioteca de requisiçoes do Apache
 Name:		libapreq
 Version:	1.3
-Release:	1
+Release:	2
 License:	Apache Group
 Group:		Libraries
 Source0:	http://www.apache.org/dist/httpd/%{name}/%{name}-%{version}.tar.gz
@@ -14,7 +14,7 @@ BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	libtool
 BuildRequires:	/usr/bin/pod2man
-Requires:	apache-mod_perl >= 1.26
+Requires:	apache1-mod_perl >= 1.26
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 # remember about perl-libapreq.spec when incrementing version
