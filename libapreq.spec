@@ -2,14 +2,14 @@ Summary:	Generic Apache Request Library
 Summary(pl):	Standardowa biblioteka zapytañ Apache
 Summary(pt_BR):	Biblioteca de requisiçoes do Apache
 Name:		libapreq
-Version:	1.2
+Version:	1.3
 Release:	1
 License:	Apache Group
 Group:		Libraries
 Source0:	http://www.apache.org/dist/httpd/%{name}/%{name}-%{version}.tar.gz
-# Source0-md5:	ae08726f11ca25a215d4d854d675c3ff
+# Source0-md5:	b40854e91a6210a3af47ffffef9a875e
 URL:		http://httpd.apache.org/apreq/
-BuildRequires:	apache-mod_perl >= 1.26-5
+BuildRequires:	apache1-mod_perl >= 1.26-5
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	libtool
@@ -59,7 +59,6 @@ Statyczna wersja biblioteki libapreq.
 %setup -q
 
 %build
-rm -f missing
 %{__libtoolize}
 %{__aclocal}
 %{__autoconf}
@@ -74,7 +73,8 @@ rm -f missing
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 install -D libapreq.3 $RPM_BUILD_ROOT%{_mandir}/man3/libapreq.3
 
