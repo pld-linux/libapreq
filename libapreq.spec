@@ -89,12 +89,12 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes CREDITS README ToDo
-%attr (755,root,root) %{_libdir}/*.so.*.*
+%attr(755,root,root) %{_libdir}/*.so.*.*
 
 %files devel
 %defattr(644,root,root,755)
-%attr (755,root,root) %{_libdir}/*.so
-%attr (755,root,root) %{_libdir}/*.la
+%attr(755,root,root) %{_libdir}/*.so
+%{_libdir}/*.la
 %{_includedir}/libapreq
 %{_mandir}/man3/libapreq.3*
 %{_examplesdir}/%{name}-%{version}
