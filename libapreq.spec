@@ -64,7 +64,7 @@ Statyczna wersja biblioteki libapreq.
 %{__autoconf}
 %{__automake}
 %configure \
-	--with-apache-includes=%{_includedir}/apache
+	--with-apache-includes=%{_includedir}/apache1
 
 %{__make}
 
