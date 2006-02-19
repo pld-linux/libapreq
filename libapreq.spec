@@ -9,12 +9,11 @@ Group:		Libraries
 Source0:	http://www.apache.org/dist/httpd/libapreq/%{name}-%{version}.tar.gz
 # Source0-md5:	8ac4296342e637c6faa731dcf9087685
 URL:		http://httpd.apache.org/apreq/
-BuildRequires:	apache1-mod_perl >= 1.26-5
+BuildRequires:	apache1-devel >= 1.3
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	libtool
 BuildRequires:	perl-tools-pod
-Requires:	apache1-mod_perl >= 1.26
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 # remember about perl-libapreq.spec when incrementing version
@@ -36,6 +35,7 @@ Summary:	libapreq header files
 Summary(pl):	Pliki nag³ówkowe libapreq
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
+Requires:	apache1-devel >= 1.3
 
 %description devel
 libapreq header files.
@@ -90,16 +90,16 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes CREDITS README ToDo
-%attr(755,root,root) %{_libdir}/*.so.*.*
+%attr(755,root,root) %{_libdir}/libapreq.so.*.*.*
 
 %files devel
 %defattr(644,root,root,755)
-%attr(755,root,root) %{_libdir}/*.so
-%{_libdir}/*.la
+%attr(755,root,root) %{_libdir}/libapreq.so
+%{_libdir}/libapreq.la
 %{_includedir}/libapreq
 %{_mandir}/man3/libapreq.3*
 %{_examplesdir}/%{name}-%{version}
 
 %files static
 %defattr(644,root,root,755)
-%{_libdir}/*.a
+%{_libdir}/libapreq.a
