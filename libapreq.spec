@@ -6,7 +6,7 @@ Version:	1.33
 Release:	1
 License:	Apache Group
 Group:		Libraries
-Source0:	http://www.apache.org/dist/httpd/%{name}/%{name}-%{version}.tar.gz
+Source0:	http://www.apache.org/dist/httpd/libapreq/%{name}-%{version}.tar.gz
 # Source0-md5:	8ac4296342e637c6faa731dcf9087685
 URL:		http://httpd.apache.org/apreq/
 BuildRequires:	apache1-mod_perl >= 1.26-5
@@ -35,7 +35,7 @@ cliente através da API do Apache em C.
 Summary:	libapreq header files
 Summary(pl):	Pliki nag³ówkowe libapreq
 Group:		Development/Libraries
-Requires:	%{name} = %{version}
+Requires:	%{name} = %{version}-%{release}
 
 %description devel
 libapreq header files.
@@ -47,7 +47,7 @@ Pliki nag³ówkowe biblioteki libapreq.
 Summary:	libapreq static library
 Summary(pl):	Statyczna biblioteka libapreq
 Group:		Development/Libraries
-Requires:	%{name}-devel = %{version}
+Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
 Static version of libapreq library.
