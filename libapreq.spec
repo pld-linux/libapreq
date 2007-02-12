@@ -1,6 +1,6 @@
 Summary:	Generic Apache Request Library
-Summary(pl):	Standardowa biblioteka zapytaÒ Apache
-Summary(pt_BR):	Biblioteca de requisiÁoes do Apache
+Summary(pl.UTF-8):   Standardowa biblioteka zapyta≈Ñ Apache
+Summary(pt_BR.UTF-8):   Biblioteca de requisi√ßoes do Apache
 Name:		libapreq
 Version:	1.33
 Release:	1
@@ -22,17 +22,17 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 This package contains modules for manipulating client request data via
 the Apache API with C.
 
-%description -l pl
-Ten pakiet zawiera modu≥y, s≥uø±ce do manipulowania danymi z zapytaÒ
-klientÛw HTTP danymi poprzez API Apache przy uøyciu C.
+%description -l pl.UTF-8
+Ten pakiet zawiera modu≈Çy, s≈Çu≈ºƒÖce do manipulowania danymi z zapyta≈Ñ
+klient√≥w HTTP danymi poprzez API Apache przy u≈ºyciu C.
 
-%description -l pt_BR
-Este pacote contÈm mÛdulos para a manipulaÁ„o de requisiÁıes de
-cliente atravÈs da API do Apache em C.
+%description -l pt_BR.UTF-8
+Este pacote cont√©m m√≥dulos para a manipula√ß√£o de requisi√ß√µes de
+cliente atrav√©s da API do Apache em C.
 
 %package devel
 Summary:	libapreq header files
-Summary(pl):	Pliki nag≥Ûwkowe libapreq
+Summary(pl.UTF-8):   Pliki nag≈Ç√≥wkowe libapreq
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Requires:	apache1-devel >= 1.3
@@ -40,19 +40,19 @@ Requires:	apache1-devel >= 1.3
 %description devel
 libapreq header files.
 
-%description devel -l pl
-Pliki nag≥Ûwkowe biblioteki libapreq.
+%description devel -l pl.UTF-8
+Pliki nag≈Ç√≥wkowe biblioteki libapreq.
 
 %package static
 Summary:	libapreq static library
-Summary(pl):	Statyczna biblioteka libapreq
+Summary(pl.UTF-8):   Statyczna biblioteka libapreq
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
 Static version of libapreq library.
 
-%description static -l pl
+%description static -l pl.UTF-8
 Statyczna wersja biblioteki libapreq.
 
 %prep
