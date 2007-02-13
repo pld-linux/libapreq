@@ -1,6 +1,6 @@
 Summary:	Generic Apache Request Library
-Summary(pl.UTF-8):   Standardowa biblioteka zapytań Apache
-Summary(pt_BR.UTF-8):   Biblioteca de requisiçoes do Apache
+Summary(pl.UTF-8):	Standardowa biblioteka zapytań Apache
+Summary(pt_BR.UTF-8):	Biblioteca de requisiçoes do Apache
 Name:		libapreq
 Version:	1.33
 Release:	1
@@ -32,7 +32,7 @@ cliente através da API do Apache em C.
 
 %package devel
 Summary:	libapreq header files
-Summary(pl.UTF-8):   Pliki nagłówkowe libapreq
+Summary(pl.UTF-8):	Pliki nagłówkowe libapreq
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Requires:	apache1-devel >= 1.3
@@ -45,7 +45,7 @@ Pliki nagłówkowe biblioteki libapreq.
 
 %package static
 Summary:	libapreq static library
-Summary(pl.UTF-8):   Statyczna biblioteka libapreq
+Summary(pl.UTF-8):	Statyczna biblioteka libapreq
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
