@@ -1,3 +1,7 @@
+#
+# Conditional build:
+%bcond_without	static_libs	# don't build static library
+#
 Summary:	Generic Apache Request Library
 Summary(pl.UTF-8):	Standardowa biblioteka zapytań Apache
 Summary(pt_BR.UTF-8):	Biblioteca de requisiçoes do Apache
@@ -64,7 +68,8 @@ Statyczna wersja biblioteki libapreq.
 %{__autoconf}
 %{__automake}
 %configure \
-	--with-apache-includes=%{_includedir}/apache1
+	--with-apache-includes=%{_includedir}/apache1 \
+	%{!?with_static_libs:--disable-static}
 
 %{__make}
 
@@ -100,6 +105,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_mandir}/man3/libapreq.3*
 %{_examplesdir}/%{name}-%{version}
 
+%if %{with static_libs}
 %files static
 %defattr(644,root,root,755)
 %{_libdir}/libapreq.a
+%endif
