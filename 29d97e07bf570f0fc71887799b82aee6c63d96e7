@@ -1,0 +1,4 @@
+- use standard library scheme (separated -devel and -static)
+- use %configure macro (pass proper environment macros)
+- fixed libapreq(3) man section
+- release 2
