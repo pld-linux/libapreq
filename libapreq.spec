@@ -6,12 +6,12 @@ Summary:	Generic Apache Request Library
 Summary(pl.UTF-8):	Standardowa biblioteka zapytań Apache
 Summary(pt_BR.UTF-8):	Biblioteca de requisiçoes do Apache
 Name:		libapreq
-Version:	1.33
+Version:	1.34
 Release:	1
 License:	Apache Group
 Group:		Libraries
 Source0:	http://www.apache.org/dist/httpd/libapreq/%{name}-%{version}.tar.gz
-# Source0-md5:	8ac4296342e637c6faa731dcf9087685
+# Source0-md5:	2bee94cf9f36fb156b794bd469fcc550
 URL:		http://httpd.apache.org/apreq/
 BuildRequires:	apache1-devel >= 1.3
 BuildRequires:	autoconf
