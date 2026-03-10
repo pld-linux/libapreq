@@ -1,0 +1,20 @@
+--- libapreq-1.34/libapreq.pod.orig	2009-10-03 22:31:46.000000000 +0200
++++ libapreq-1.34/libapreq.pod	2026-03-10 18:00:00.000000000 +0100
+@@ -196,8 +196,6 @@
+ 
+ =head1 ApacheCookie
+ 
+-=over 4
+-
+ =head2 ApacheCookie *ApacheCookie_new (request_rec *r, ...) 
+ 
+ This function creates a new I<ApacheCookie> object, using the given
+@@ -336,8 +334,6 @@
+ Returns a string version of the cookie:
+ 
+  ap_table_add(r->headers_out, "Set-Cookie", ApacheCookie_as_string(c));
+-
+-=back
+ 
+ =head1 BUGS
+ 

@@ -2,17 +2,21 @@
 # Conditional build:
 %bcond_without	static_libs	# don't build static library
 #
+%define		skip_post_check_so	libapreq\.so\..*
+
 Summary:	Generic Apache Request Library
 Summary(pl.UTF-8):	Standardowa biblioteka zapytań Apache
 Summary(pt_BR.UTF-8):	Biblioteca de requisiçoes do Apache
 Name:		libapreq
 Version:	1.34
-Release:	1
+Release:	2
 License:	Apache Group
 Group:		Libraries
-Source0:	http://www.apache.org/dist/httpd/libapreq/%{name}-%{version}.tar.gz
+Source0:	https://archive.apache.org/dist/httpd/libapreq/%{name}-%{version}.tar.gz
 # Source0-md5:	2bee94cf9f36fb156b794bd469fcc550
-URL:		http://httpd.apache.org/apreq/
+URL:		https://httpd.apache.org/apreq/
+# locally written: fix POD nesting for modern pod2man
+Patch0:		pod-structure-fix.patch
 BuildRequires:	apache1-devel >= 1.3
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -61,6 +65,7 @@ Statyczna wersja biblioteki libapreq.
 
 %prep
 %setup -q
+%patch -P0 -p1
 
 %build
 %{__libtoolize}
